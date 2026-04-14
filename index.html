@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunny | GitHub Bio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            max-width: 500px;
-            padding: 20px;
-            border-radius: 12px;
-            background: rgba(0, 0, 0, 0.3);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-        }
-        h1 {
-            margin-bottom: 10px;
-        }
-        p {
-            margin: 8px 0;
-            font-size: 18px;
-        }
-        .emoji {
-            font-size: 22px;
-        }
-    </style>
+    <title>Sunny | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+
+<header>
+    <div class="logo">Sunny</div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="skills.html">Скиллы</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
         <h1>👋 Hey! I'm Sunny</h1>
         <p>💻 Coding newbie exploring the world of tech</p>
         <p>⚡ Turning coffee into code</p>
-        <p>🌱 Currently learning HTML, CSS, JavaScript</p>
+        <p>🌱 Learning HTML, CSS, JavaScript</p>
+        <button onclick="scrollToSection()">Подробнее</button>
     </div>
+
+    <div class="hero-img">
+        <img src="images/images.jpg" alt="Sunny Photo">
+    </div>
+</section>
+
+<section id="more" class="info">
+    <h2>Начало пути</h2>
+    <p>Я начинающий разработчик, стремящийся развиваться и выйти на рынок IT.</p>
+</section>
+
+<footer>
+    <p>© 2026 Sunny | Portfolio</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
